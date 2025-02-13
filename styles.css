@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 18px;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.tab {
+    padding: 12px 24px;
+    cursor: pointer;
+    background: #4285F4;
+    color: white;
+    border: none;
+    margin: 4px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+.tab.active {
+    background: black;
+}
+.active {
+    background: black;
+}
+.chart-container {
+    position: relative;
+    display: inline-block;
+}
+canvas {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.chart-center {
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
